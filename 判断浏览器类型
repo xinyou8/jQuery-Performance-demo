@@ -1,0 +1,26 @@
+$(document).ready(function(){
+    //Firefox 2 and above
+    if($.browser.mozilla && $.browser.version >= '1.8'){
+        //.....
+    }
+    //Safari
+    if($.browser.safari){
+        //.....
+    }
+    //Chrome
+    if($.browser.chrome){
+        //....
+    }
+    //Opera
+    if($.browser.opera){
+        //....
+    }
+    //IE6 and below
+    if($.browser.msie && $.browser.version <=6){
+        //....
+    }
+    //above IE6
+    if($.browser.msie && $.browser.version >6){
+        //....
+    }
+});
