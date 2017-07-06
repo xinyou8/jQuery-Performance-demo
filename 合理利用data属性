@@ -1,0 +1,6 @@
+<div id="dl" data-role="page" data-last-value="43" data-options='{"name":"huahua"}'></div>
+
+
+$("#dl").data("role");       // "page"
+$("#dl").data("lastValue");       //43
+$("#dl").data("options").name;       //"huahua"
