@@ -1,0 +1,3 @@
+$(document).ready(function(){
+    $("input.text1").val("Enter your search text here");
+});
