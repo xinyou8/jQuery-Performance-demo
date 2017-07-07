@@ -1,0 +1,5 @@
+$(document).ready(function(){
+    $("#XY").mousedown(function (e) {
+        alert(e.which)  // 1 = 左键，2 = 中键， 3 = 右键
+    })
+})
