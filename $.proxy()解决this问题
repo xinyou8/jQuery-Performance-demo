@@ -1,0 +1,23 @@
+//使用回调的缺点之一是执行类库中方法后，上下文对象变了
+
+<div id="panel" style="display:none">
+        <button>Close</button>
+</div>
+        
+
+//下面会出现问题，消失的是button而不是div.
+$("#panel").fadeIn(function () {
+    $("panel button").click(function () {
+        $(this).fadeOut();
+    });
+})
+
+
+
+//可以使用$.proxy方法
+$("#panel").fadeIn(function () {
+    $("panel button").click($.proxy(function () {
+        $(this).fadeOut();
+    },this));
+})
+
