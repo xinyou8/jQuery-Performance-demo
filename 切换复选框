@@ -1,0 +1,5 @@
+var tog = false;
+$("button").click(function () {
+    $("input[type = checkbox]").attr("checked",!tog);
+    tog = !tog;
+})
