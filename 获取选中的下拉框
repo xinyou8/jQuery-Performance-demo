@@ -1,0 +1,2 @@
+$("#element").find("option:selected");
+$("#element option:selected");
