@@ -1,0 +1,5 @@
+$(document).ready(function () {
+    $("a[href$='pdf']").addClass("pdf");
+    $("a[href$='zip']").addClass("zip");
+    $("a[href$='psd']").addClass("psd");
+})
