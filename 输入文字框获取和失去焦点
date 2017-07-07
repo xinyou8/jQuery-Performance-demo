@@ -1,3 +1,16 @@
 $(document).ready(function(){
     $("input.text1").val("Enter your search text here");
+    textFill($('input.text1'));
 });
+function textFill(input){
+    var originalvalue = input.val();
+    input.focus(function(){
+        if($.trim(input.val()) == originalvalue){
+            input.val('');
+        }
+    }).blur(function(){
+        if($.trim(input.val()) == ''){
+            input.val(originalvalue);
+        }
+    })
+}
