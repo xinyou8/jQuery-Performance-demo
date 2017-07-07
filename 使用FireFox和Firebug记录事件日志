@@ -1,0 +1,6 @@
+jQuery.log = jQuery.fn.log = function (msg) {
+    if(console){
+        console.log("%s:%o", msg, this);
+    }
+    return this;
+}
