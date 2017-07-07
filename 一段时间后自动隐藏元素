@@ -1,0 +1,7 @@
+// 1.4版本以前
+setTimeout(function () {
+    $("div").fadeIn(400)
+}, 3000);
+
+// 1.4及之后
+$("div").slideUp(300).delay(3000).fadeIn(400);
