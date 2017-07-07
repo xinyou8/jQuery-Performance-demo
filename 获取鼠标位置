@@ -1,0 +1,5 @@
+$(document).ready(function(){
+   $(document).mousemove(function(e){
+       $('#XY').html("X:" + e.pageX + "|Y:" + e.pageY);
+   }) 
+});
