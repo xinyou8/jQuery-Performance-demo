@@ -1,0 +1,12 @@
+//不是很懂
+$(document).ready(function(){
+    $.extend($.expr[':'], {
+        moreThen500px: function(a){
+            return $(a).width() > 500;
+        }
+    });
+    
+    $(".box:moreThen500px").click(function () {
+        ...
+    })
+})
