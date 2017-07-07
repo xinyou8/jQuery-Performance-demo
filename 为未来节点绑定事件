@@ -1,0 +1,17 @@
+// 1.4.2前
+$("table").each(function () {
+    $("td", this).live("click", function () {
+        $(this).toggleClass("hover");
+    });
+});
+
+//1.4.2
+$("table").delegate("td", "click", function () {
+        $(this).toggleClass("hover");
+});
+
+
+//1.4.2后
+$("table").on("click","td", function () {
+    $(this).toggleClass("hover");
+});
