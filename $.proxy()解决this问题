@@ -21,3 +21,11 @@ $("#panel").fadeIn(function () {
     },this));
 })
 
+
+//等同于
+$("#panel").fadeIn(function () {
+    var that = this;
+    $("panel button").click(function () {
+        $(that).fadeOut();
+    });
+})
